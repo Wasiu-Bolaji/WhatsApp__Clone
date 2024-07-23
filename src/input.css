@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .link::after {
+      @apply content-[''] bg-colorGreen h-[2px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-700;
+  }
+
+  .link:hover::after {
+      @apply w-[100%];
+  }
+
+
+  .btn::after{
+      @apply content-[''] bg-colorWhite h-[0px] w-[100%] left-0 bottom-0 right-0 rounded-full absolute duration-500;
+  }
+
+  .btn:hover::after {
+      @apply h-[100%];
+  }
+
+  .btn-link::after {
+    @apply content-[''] h-[2px] w-[100%] bg-colorGreen left-0 right-0 -bottom-[2px] absolute;
+  }
+
+  .modal-enter {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .modal-enter-active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .modal-exit {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .modal-exit-active {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+}

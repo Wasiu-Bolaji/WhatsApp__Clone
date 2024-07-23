@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp | Secure and Reliable</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-pink-50 max-w-[100vw] relative">
+
+    <!-- MODAL WINDOW FOR SM AND MD SCREEN -->
+    <div class="modal modal-enter sm-modal__window hidden bg-colorWhite inset-0 h-[100%] overflow-y-auto z-9999 w-[100%] xl:hidden">
+        <div class="flex items-center pt-[1.5rem] px-8">
+            <i class="fa-solid fa-xmark text-2xl close-hamburger cursor-pointer flex-initial mr-[3.5rem] sm:mr-[7rem] md:mr-[18rem] lg:mr-[25.5rem]"></i>
+            <img src="./img/logo-main.svg" alt="" class="xxs:w-[95px] lg:w-[125px] xl:hidden">
+        </div>
+        <!-- horizontal line -->
+        <hr class="border-t-1 border-slate-600 mx-0 my-4">
+        <ul class="px-8">
+            <li><a href="#" class="text-[33px] font-normal leading-none">Home</a></li>
+        </ul>
+        <!-- horizontal line -->
+        <hr class="border-t-1 border-slate-600 mx-0 my-4">
+        <ul class="px-8 flex items-center justify-between">
+            <li>
+                <a href="#" class="text-[33px] font-normal leading-none">Features</a>  
+            </li>
+            <i class="fa fa-plus text-2xl font-semibold show-subFeature__item" aria-hidden="true"></i>
+        </ul>
+
+        <!-- SUB FEATURES FOR SM AND MD SCREEN -->
+        <div class="sub-feature__item hidden flex flex-col items-start xxs:pl-[3.5rem] md:pl-[16rem] lg:pl-[26rem]">
+            <div class="flex items-center group pt-[1rem]">
+                <div class="mr-[1rem] h-[2rem] w-[2rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1rem] w-[1rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <h2 class="mr-[.5rem] xxs:text-[16px] md:text-[20px] font-normal group-hover:link relative">Message privately</h2>
+                    <a href="#" class="text-[18px] font-normal">&rarr;</a>
+                </div>
+            </div>
+
+            <div class="flex items-center group pt-[1rem]">
+                <div class="mr-[1rem] h-[2rem] w-[2rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1rem] w-[1rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-globe"></use>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <h2 class="mr-[.5rem] xxs:text-[16px] md:text-[20px] font-normal group-hover:link relative">Stay Connected</h2>
+                    <a href="#" class="text-[18px] font-normal">&rarr;</a>
+                </div>
+            </div>
+
+            <div class="flex items-center group pt-[1rem]">
+                <div class="mr-[1rem] h-[2rem] w-[2rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1rem] w-[1rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-users"></use>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <h2 class="mr-[.5rem] xxs:text-[16px] md:text-[20px] font-normal group-hover:link relative">Build community</h2>
+                    <a href="#" class="text-[18px] font-normal">&rarr;</a>
+                </div>
+            </div>
+
+            <div class="flex items-center group pt-[1rem]">
+                <div class="mr-[1rem] h-[2rem] w-[2rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1rem] w-[1rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-emoji-happy"></use>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <h2 class="mr-[.5rem] xxs:text-[16px] md:text-[20px] font-normal group-hover:link relative">Express yourself</h2>
+                    <a href="#" class="text-[18px] font-normal">&rarr;</a>
+                </div>
+            </div>
+
+            <div class="flex items-center group pt-[1rem]">
+                <div class="mr-[1rem] h-[2rem] w-[2rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1rem] w-[1rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-shop"></use>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <h2 class="mr-[.5rem] xxs:text-[16px] md:text-[20px] font-normal group-hover:link relative">WhatsApp for business</h2>
+                    <a href="#" class="text-[18px] font-normal">&rarr;</a>
+                </div>
+            </div>
+        </div> 
+        <!-- SUB-FEATURES ENDS HERE -->
+
+        <!-- horizontal line -->
+        <hr class="border-t-1 border-slate-600 mx-0 my-4">
+        <ul class="px-8">
+            <li><a href="#" class="text-[33px] font-normal leading-none">Privacy</a></li>
+        </ul>
+        <!-- horizontal line -->
+        <hr class="border-t-1 border-slate-600 mx-0 my-4">
+        <ul class="px-8">
+            <li><a href="#" class="text-[33px] font-normal leading-none">Help Center</a></li>
+        </ul>
+        <!-- horizontal line -->
+        <hr class="border-t-1 border-slate-600 mx-0 my-4">
+        <ul class="px-8">
+            <li><a href="#" class="text-[33px] font-normal leading-none">Blog</a></li>
+        </ul>
+        <!-- horizontal line -->
+        <hr class="border-t-1 border-slate-600 mx-0 my-4">
+        <ul class="px-8">
+            <li><a href="#" class="text-[33px] font-normal leading-none">For Business</a></li>
+        </ul>
+        <!-- horizontal line -->
+        <hr class="border-t-1 border-slate-600 mx-0 my-4">
+        <ul class="px-8 mb-4">
+            <li><a href="#" class="text-[33px] font-normal leading-none">Download</a></li>
+        </ul>
+
+        <!-- footer -->
+        <div class="bg-colorBlack text-colorWhite">
+            <div class="xxs:h-[8rem] xxs:mx-[3rem] sm:mx-[5rem] xxs:flex xxs:justify-center xxs:items-center md:hidden">
+                <!-- Button -->
+                <button class="xxs:flex-1 relative btn group rounded-full xxs:px-[2rem] xxs:py-[1rem] md:py-[1rem] bg-colorGreen xxs:w-[130px] md:w-[200px] text-colorBlack flex justify-center items-center xxs:text-[14px] sm:text-[18px] lg:text-[20px]">
+                    <span class="relative z-10 group-hover:text-colorBlack xxs:text-[20px]">Download</span>
+                    <span class="relative ml-2 z-10 group-hover:text-colorBlack xxs:text-[20px]">&darr;</span>
+                </button>
+            </div>
+            <!-- BUTTON FOR MD SCREEN -->
+            <div class="mx-6">
+                <div class="xxs:hidden md:flex h-[8rem] justify-between items-center">
+                    <!-- Button -->
+                    <button class="relative btn group rounded-full px-[2rem] py-[1rem] bg-colorGreen w-[200px] text-colorBlack flex justify-center items-center xxs:text-[14px] sm:text-[18px] lg:text-[20px]">
+                        <span class="relative z-10 group-hover:text-colorBlack xxs:text-[20px]">Download</span>
+                        <span class="relative ml-2 z-10 group-hover:text-colorBlack xxs:text-[20px]">&darr;</span>
+                    </button>
+
+                    <!-- socials -->
+                    <div class="xxs:hidden md:flex justify-around items-center px-2rem">
+                        <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                            <use xlink:href="img/sprite.svg#icon-twitter-with-circle"></use>
+                        </svg>
+    
+                        <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                            <use xlink:href="img/sprite.svg#icon-youtube-with-circle"></use>
+                        </svg>
+    
+                        <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                            <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+                        </svg>
+    
+                        <svg class="h-[3rem] w-[3rem] fill-white">
+                            <use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- socials -->
+            <div class="flex justify-around items-center px-2rem sm:mx-[5rem] md:hidden">
+                <svg class="h-[3rem] w-[3rem] fill-white">
+                    <use xlink:href="img/sprite.svg#icon-twitter-with-circle"></use>
+                </svg>
+
+                <svg class="h-[3rem] w-[3rem] fill-white">
+                    <use xlink:href="img/sprite.svg#icon-youtube-with-circle"></use>
+                </svg>
+
+                <svg class="h-[3rem] w-[3rem] fill-white">
+                    <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+                </svg>
+
+                <svg class="h-[3rem] w-[3rem] fill-white">
+                    <use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use>
+                </svg>
+            </div>
+            <!-- horizontal line -->
+            <hr class="border-t-1 border-slate-600 mx-0 my-4">
+            <!-- copyright -->
+            <div class="flex justify-between pb-[3rem] pt-[1rem] px-4">
+                <div class="">
+                    <p class="text-[12px]">Terms & Privacy Policy</p>
+                </div>
+                <div class="xxs:hidden md:block">
+                    <p class="text-[12px]">2024 &copy;</p>
+                </div>
+                <div class="xxs:hidden md:block">
+                    <p class="text-[12px]">WhatsApp LLC</p>
+                </div>
+                <button class="rounded-full xxs:px-[2rem] xxs:py-[.5rem] bg-colorBlack border border-colorWhite xxs:w-[180px] text-colorWhite flex justify-between items-center xxs:text-[14px]">
+                    <span class="xxs:text-[20px]">English</span>
+                    <span class="xxs:text-[20px]">&darr;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL WINDOW FOR SM AND MD SCREEN ENDS HERE -->
+
+
+    
+    <header id="header" class="header bg-pink-50 bg-pink-50/[.9] sticky top-0 z-10 xxs:px-[1rem] lg:px-[2rem] xxs:h-[3rem] xs:h-[4rem] md:h-[5rem] md:mb-4 p-[1rem] flex justify-between items-center">
+        <!-- small screen -->
+        <!-- hamburger -->
+        <div class="xl:hidden">
+            <i class="fa-solid fa-bars text-2xl hamburger cursor-pointer"></i>
+        </div>
+
+        <!-- logo -->
+        <div>
+            <img src="./img/logo-main.svg" alt="" class="xxs:w-[95px] lg:w-[125px] xl:hidden">
+        </div>
+            
+        <!-- button -->
+        <div class="h-[2rem] w-[2rem] rounded-full bg-colorGreen border border-colorBlack flex justify-center items-center xl:hidden">
+            <span class="text-xl font-bold">&darr;</span>
+        </div>
+
+
+        <!-- largest screen -->
+        <!-- LOGO -->
+        <div class="xxs:hidden xl:block xl:flex-initial">
+            <img src="./img/logo-main.svg" alt="" class="xl:w-[180px]">
+        </div>
+
+        <!-- LIST ITEMS -->
+        <ul class="xxs:hidden xl:flex xl:flex-auto xl:mx-[8rem] xl:items-center xl:justify-between">
+            <li class="xlsub-item__main relative flex items-center">
+                <a href="#" class="link">Features</a>
+                <svg class="h-[1rem] w-[1rem]">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+            </li>
+            <li class="relative"><a href="#" class="link">Privacy</a></li>
+            <li class="relative"><a href="#" class="link">Help Center</a></li class="relative">
+            <li class="relative"><a href="#" class="link">Blog</a></li>
+            <li class="relative"><a href="#" class="link">For Business</a></li>
+            <li class="relative"><a href="#" class="link">WhatsApp Web</a></li>
+        </ul>
+
+        <!-- BUTTON -->
+        <button class="xl:flex-initial xxs:hidden xl:flex relative btn group rounded-full px-[2rem] py-[.5rem] bg-colorGreen w-[200px] border border-colorBlack text-colorBlack justify-center items-center text-[20px]">
+            <span class="relative z-10 group-hover:text-colorBlack">Download</span>
+            <span class="relative ml-2 z-10 group-hover:text-colorBlack">&darr;</span>
+        </button>
+    </header>
+
+    <main id="main">
+        <!-- MODAL WINDOW FOR LARGEST SCREEN -->
+    <div class="xl-modal__window hidden z-10 fixed inset-0 h-[600rem] bg-colorWhite">
+        <div class="my-3 flex justify-between items-center mx-8">
+            <div class="flex-initial w-[180px]">
+                <img src="./img/logo-main.svg" alt="" class="w-[180px]">
+            </div>
+            
+            <div class="flex-1 mx-[5rem]">
+                <ul class="flex justify-between items-center">
+                    <li class="xlsub-item__modal relative flex items-center">
+                        <a href="#">Features</a>
+                        <svg class="h-[1rem] w-[1rem]">
+                            <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
+                        </svg>
+                    </li>
+                    <li class="relative"><a href="#" class="link">Privacy</a></li>
+                    <li class="relative"><a href="#" class="link">Help Center</a></li class="relative">
+                    <li class="relative"><a href="#" class="link">Blog</a></li>
+                    <li class="relative"><a href="#" class="link">For Business</a></li>
+                    <li class="relative"><a href="#" class="link">WhatsApp Web</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-initial w-[200px] relative flex justify-center items-center">
+                <button class="relative w-[190px] border border-black bg-green-500 text-black px-9 py-4 rounded-full font-normal overflow-hidden group hover:text-colorWhite">
+                    <span class="relative z-10 flex items-center">
+                        Download
+                        <i class="fa fa-download text-xs ml-2"></i>
+                    </span>
+                    <span class="absolute inset-0 bg-black transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="mx-[5rem] mt-[2rem] flex flex-wrap justify-center items-center max-w-[70rem]">
+            <div class="mr-[1.5rem] pt-[2rem] pl-[1.5rem] h-[16rem] w-[16rem] border border-slate-500 rounded-3xl group transition-all duration-300 hover:bg-colorGreen">
+                <div class="h-[2.5rem] w-[2.5rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1.5rem] w-[1.5rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-briefcase"></use>
+                    </svg>
+                </div>
+                <h2 class="text-[20px] my-[1rem] font-medium">Message privately</h2>
+                <p class="mb-[1rem] font-medium text-[14px]">
+                    <span class="block">End-to-end encryption</span>
+                    <span class="block">and privacy controls.</span>
+                </p>
+                <a href="#" class="text-[26px] font-bold">&rarr;</a>
+            </div>
+
+            <div class="mr-[1.5rem] pt-[2rem] pl-[1.5rem] h-[16rem] w-[16rem] border border-slate-500 rounded-3xl group transition-all duration-300 hover:bg-colorGreen">
+                <div class="h-[2.5rem] w-[2.5rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1.5rem] w-[1.5rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-globe"></use>
+                    </svg>
+                </div>
+                <h2 class="text-[20px] my-[1rem] font-medium">Stay connected</h2>
+                <p class="mb-[1rem] font-medium text-[14px]">
+                    <span class="block">Message and call for</span>
+                    <span class="block">free* around the world.</span>
+                </p>
+                <a href="#" class="text-[26px] font-bold">&rarr;</a>
+            </div>
+
+            <div class="mr-[1.5rem] pt-[2rem] pl-[1.5rem] h-[16rem] w-[16rem] border border-slate-500 rounded-3xl group transition-all duration-300 hover:bg-colorGreen">
+                <div class="h-[2.5rem] w-[2.5rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1.5rem] w-[1.5rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-users"></use>
+                    </svg>
+                </div>
+                <h2 class="text-[20px] my-[1rem] font-medium">Build community</h2>
+                <p class="mb-[1rem] font-medium text-[14px]">
+                    <span class="block">Group conversatins</span>
+                    <span class="block">made simple.</span>
+                </p>
+                <a href="#" class="text-[26px] font-bold">&rarr;</a>
+            </div>
+
+            <div class="pt-[2rem] pl-[1.5rem] h-[16rem] w-[16rem] border border-slate-500 rounded-3xl group transition-all duration-300 hover:bg-colorGreen">
+                <div class="h-[2.5rem] w-[2.5rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1.5rem] w-[1.5rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-emoji-happy"></use>
+                    </svg>
+                </div>
+                <h2 class="text-[20px] my-[1rem] font-medium">Express yourself</h2>
+                <p class="mb-[1rem] font-medium text-[14px]">
+                    <span class="block">Say it with stickers, voice,</span>
+                    <span class="block">GIFs and more.</span>
+                </p>
+                <a href="#" class="text-[26px] font-bold">&rarr;</a>
+            </div>
+
+            <div class="pt-[2rem] pl-[1.5rem] h-[16rem] w-[16rem] border border-slate-500 mt-[2rem] rounded-3xl group transition-all duration-300 hover:bg-colorGreen">
+                <div class="h-[2.5rem] w-[2.5rem] bg-colorGreen rounded-full flex items-center justify-center group-hover:bg-colorBlack">
+                    <svg class="h-[1.5rem] w-[1.5rem] fill-white group-hover:fill-colorGreen">
+                        <use xlink:href="img/sprite.svg#icon-shop"></use>
+                    </svg>
+                </div>
+                <h2 class="text-[20px] my-[1rem] font-medium">WhatsApp business</h2>
+                <p class="mb-[1rem] font-medium text-[14px]">
+                    <span class="block">Reach your customers</span>
+                    <span class="block">from anywhere.</span>
+                </p>
+                <a href="#" class="text-[26px] font-bold">&rarr;</a>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL WINDOW FOR LARGEST SCREEN ENDS HERE -->
+        <!-- hero section -->
+        <section id="section-hero" class="mb-[2rem]">
+            <div class="xxs:h-[38rem] md:h-[62rem] lg:h-[45rem] xxs:bg-[url('./img/md-img.png')] lg:bg-[url('./img/header-bg.png')] lg:bg-center bg-no-repeat bg-cover rounded-3xl xxs:mx-2 sm:mx-4 md:mx-8 lg:mx-12 mb-2">
+                <!-- smaller screen chats -->
+                <div class="xxs:ml-8 md:ml-6">
+                    <!-- coffee and heart emoji -->
+                    <div class="float-chat relative xxs:pt-[11.5rem] xs:pt-[13.5rem] sm:pt-[14rem] md:pt-[27rem] lg:flex lg:justify-end lg:pt-[5rem] xl:pt-[6rem]">
+                        <img src="./img/head-bg-cont-4.png" alt="chat" class="hero__img1 xxs:w-[240px] xs:w-[295px] sm:w-[334px] md:w-[379px]">
+
+                        <img src="./img/heart-emoji.png" alt="heart emoji" class="hero__img2 absolute xxs:top-[12.25rem] xs:top-[14.25rem] sm:top-[15rem] md:top-[28rem] md:h-[37px] lg:top-[6rem] lg:right-[2rem] xl:top-[7rem] xl:-right-[3rem] xl:h-[47px]">
+
+                        <img src="./img/head-bg-cont-1.png" alt="coffee" class="hero__img3 absolute xxs:top-[12rem] xs:right-[1.5rem] xs:top-[14rem] xxs:right-[2rem] sm:top-[15rem] sm:right-[1rem] md:top-[29rem] md:right-[16rem] md:h-[132px] lg:top-[7rem] lg:right-[2rem] xl:h-[120px] xl:top-[8rem] xl:right-[2rem]">
+                    </div>
+
+                    <!-- Text, button and lg:screen -->
+                    <div class="xl:ml-[8rem] lg:flex lg:justify-between lg:items-center">
+                        <!-- text and button -->
+                        <div>
+                            <h1 class="xxs:text-[44px] md:text-[64px] lg:text-[80px] text-colorWhite xxs:leading-7 md:leading-9 lg:leading-[3.5rem] xxs:mt-[4.5rem] md:mt-[6.5rem]">
+                                Message
+                            </h1>
+                            <h1 class="xxs:text-[44px] md:text-[64px] lg:text-[80px] text-colorWhite">
+                                privately
+                            </h1>
+                            <p class="text-colorWhite font-bold xxs:max-w-[200px] xs:min-w-[300px] sm:min-w-[350px] md:min-w-[300px] md:text-[16px] lg:text-[18px] lg:mt-4 lg:min-w-[350px]">
+                                Simple, reliable, private messaging and calling for free*, available all over the world.
+                            </p>
+                            <!-- Button -->
+                            <button class="xxs:mt-[2.5rem] xs:mt-[2.5rem] md:mt-[3.5rem] relative btn group rounded-full xxs:px-[2rem] xxs:py-[.5rem] md:py-[1rem] bg-colorGreen xxs:w-[130px] md:w-[200px] text-colorBlack flex justify-center items-center xxs:text-[14px] sm:text-[18px] lg:text-[20px]">
+                                <span class="relative z-10 group-hover:text-colorBlack">Download</span>
+                                <span class="relative ml-2 z-10 group-hover:text-colorBlack">&darr;</span>
+                            </button>
+                        </div>
+
+                        <!-- chat for lg screen size -->
+                        <div class="xxs:hidden lg:flex lg:ml-[5rem] flex-col -mt-[8rem]">
+                            <div class="mt-[18rem] mb-[.5rem] lg:ml-[5rem]">
+                                <img src="./img/vn.png" alt="" class="hero__img4 w-[380px] h-[60px]">
+                            </div>
+                            <div class="relative lg:ml-[5rem]">
+                                <img src="./img/head-cont-3.png" alt="" class="hero__img5 w-[400px] h-[267px]">
+                                <img src="./img/emoji.png" alt="" class="hero__img6 absolute top-[15rem] left-[0rem] w-[400px]">
+                                <img src="./img/head-bg-cont-2.png" alt="" class="hero__img7 absolute right-[3rem] top-[17rem]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="xxs:text-[12px] xxs:mx-2 xs:flex xs:justify-end md:mr-[2rem] lg:mr-[3rem]">* Data charges may apply. Contact your provider for details.</p>
+        </section>
+        <!-- hero section ends here -->
+
+        <!-- section voice and video call -->
+        <section id="section-voice-call" class="">
+            <div>
+                <div class="lg:mb-[3rem] xxs:min-w-[280px] sm:min-w-[400px] md:min-w-[700px] flex justify-center items-center mx-[2rem] md:-[4rem]">
+                    <img src="./img/crop1.png" alt="" class="xxs:w-[18rem] xs:w-[20rem] mt-[2rem] w-[100%] sm:w-[25rem] md:w-[40rem] lg:hidden">
+                    <img src="./img/chat-1.png" alt="" class="chat1 xxs:hidden lg:flex">
+                </div>
+                <h2 class="v-call xxs:mx-[2rem] lg:mx-[5rem] xl:mx-[14rem] text-center xxs:text-[20px] md:text-[28px] lg:text-[45px] xl:text-[47px] font-semibold xxs:leading-none">
+                    With private messaging and calling, you can be yourself, speak freely and feel close to the most important people in your life no matter where they are.
+                </h2>
+                <div class="lg:mb-[3rem] xxs:min-w-[280px] sm:min-w-[400px] md:min-w-[700px] flex justify-center items-center mx-[2rem] md:-[4rem]">
+                    <img src="./img/crop2.png" alt="" class="xxs:w-[18rem] xs:w-[20rem] mt-[2rem] w-[100%] sm:w-[25rem] md:w-[40rem] lg:hidden">
+                    <img src="./img/chat-2.png" alt="" class="chat2 xxs:hidden lg:flex">
+                </div>
+                <div class="never-miss lg:flex lg:justify-around lg:mx-[1rem] ">
+                    <div class="xxs:mx-[1.5rem] xxs:mb-[3rem]">
+                        <h1 class="xxs:mt-[2rem] xxs:text-[31px] leading-none mb-[2rem] md:text-[46px] lg:text-[57px] md:max-w-[400px]">
+                            Never miss a moment with voice and video calls
+                        </h1>
+                        <p class="xxs:text-[16px] lg:text-[18px] xxs:mb-[2rem] md:max-w-[419px]">
+                            From a group call to classmates to a quick call with mom, feel like you’re in the same room with voice and video calls.
+                        </p>
+                        <!-- Button link -->
+                        <button class="flex items-center group">
+                            <span class="relative btn-link xxs:text-[16px] lg:text-[18px] group-hover:text-colorGreen">Learn more</span>
+                            <span>
+                                <svg class="h-[1rem] w-[1rem] mt-1 group-hover:fill-colorGreen">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- image -->
+                    <div class="flex justify-center items-center">
+                        <img src="./img/vid-call.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section voice and video call ends here -->
+
+        <!-- section speak freely -->
+        <section id="section-speak-freely" class="speak-freely">
+            <div class="bg-colorBlack text-colorWhite mt-[2rem] xxs:pt-[4rem] lg:pt-[2rem] md:pt-[8rem] mb-[4rem] lg:flex lg:flex-row-reverse lg:items-center xl:justify-around">
+                <div class="xxs:mx-[1.5rem] md:mx-[2rem]">
+                    <h2 class="mb-2">
+                        <span class="xxs:text-[40px] lg:text-[60px] block leading-[0.7rem] lg:leading-[2rem]">Speak</span>
+                        <span class="xxs:text-[40px] lg:text-[60px] block text-colorGreen">freely</span>
+                    </h2>
+                    <p class="xxs:text-[16px] xl:text-[18px] mb-6 md:max-w-[455px] md:font-bold">
+                        With end-to-end encryption, your personal messages and calls are secured. Only you and the person you're talking to can read or listen to them, and nobody in between, not even WhatsApp.
+                    </p>
+                    <!-- Button link -->
+                    <button class="flex items-center group">
+                        <span class="relative btn-link xxs:text-[16px] lg:text-[18px] group-hover:text-colorGreen">Learn more</span>
+                        <span>
+                            <svg class="h-[1rem] w-[1rem] fill-colorWhite mt-1 group-hover:fill-colorGreen">
+                                <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="flex justify-center items-center xxs:mt-[4rem] lg:mx-[2rem] xl:pb-[4rem]">
+                    <img src="./img/speak-freely.png" alt="" class="xl:w-[42rem]">
+                </div>
+            </div>
+        </section>
+        <!-- section speak freely ends here -->
+
+        <!-- keep in touch -->
+        <section id="section-keep-in-touch" class="keep-in-touch">
+            <div>
+               <div class="lg:flex lg:justify-around lg:mx-[1rem] ">
+                    <div class="xxs:mx-[1.5rem] xxs:mb-[3rem]">
+                        <h1 class="xxs:mt-[2rem] xxs:text-[34px] xs:text-[40px] leading-none mb-[2rem] md:text-[46px] lg:text-[57px] md:max-w-[378px] xl:max-w-[439px]">
+                            Keep in touch with your groups
+                        </h1>
+                        <p class="xxs:text-[16px] lg:text-[18px] xxs:mb-[2rem] md:max-w-[435px] xl:max-w-[448px]">
+                            Whether it's planning an outing with friends or simply staying on top of your family chats, group conversations should feel effortless.
+                        </p>
+                        <!-- Button link -->
+                        <button class="flex items-center group">
+                            <span class="relative btn-link xxs:text-[16px] lg:text-[18px] group-hover:text-colorGreen">Learn more</span>
+                            <span>
+                                <svg class="h-[1rem] w-[1rem] mt-1 group-hover:fill-colorGreen">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- image -->
+                    <div class="flex justify-center items-center">
+                        <img src="./img/bf-group-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- keep in touch ends here -->
+
+
+        <!-- section what you feel -->
+        <section id="section-what-you-feel" class="what-you-feel">
+            <div class="mt-[1rem] xxs:pt-[4rem] lg:pt-[2rem] md:pt-[8rem] mb-[4rem] lg:flex lg:flex-row-reverse lg:items-center lg:justify-around">
+                <div class="xxs:mx-[1.5rem] md:mx-[2rem]">
+                    <h1 class="xxs:mt-[2rem] xxs:text-[34px] xxs:max-w-[198px] xs:text-[40px] leading-none mb-[2rem] md:text-[46px] lg:text-[57px] md:max-w-[251px] xl:max-w-[439px]">
+                        Say what you feel
+                        </h1>
+                        <p class="xxs:text-[16px] lg:text-[18px] xxs:mb-[2rem] md:max-w-[356px] lg:max-w-[401px] xl:max-w-[423px]">
+                            Express yourself without words. Use stickers and GIFs or share everyday moments on Status. Record a voice message for a quick hello or a longer story.
+                        </p>
+                    <!-- Button link -->
+                    <button class="flex items-center group">
+                        <span class="relative btn-link xxs:text-[16px] lg:text-[18px] group-hover:text-colorGreen">Learn more</span>
+                        <span>
+                            <svg class="h-[1rem] w-[1rem] mt-1 group-hover:fill-colorGreen">
+                                <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="relative flex justify-center items-center lg:items-start xxs:mt-[4rem] lg:mx-[2rem] xl:pb-[4rem]">
+                    <img src="./img/pebble-beach-bg.png" alt="" class="xl:w-[26rem] ">
+                    <img src="./img/pebble-beach.png" alt="" class="absolute xxs:top-[13rem] xxs:left-[0rem] md:left-[15rem] lg:left-[0rem] xl:top-[21rem] xl:-[1rem] md:w-[20rem] xl:w-[20rem]">
+                </div>
+            </div>
+        </section>
+        <!-- section say what you feel ends here -->
+
+
+        <!-- section transform -->
+        <section id="section-transform" class="transform">
+            <div>
+               <div class="lg:flex lg:justify-around lg:mx-[1rem] ">
+                    <div class="xxs:mx-[1.5rem] xxs:mb-[3rem]">
+                        <h1 class="xxs:mt-[2rem] xxs:text-[34px] xs:text-[40px] leading-none mb-[2rem] md:text-[45px] lg:text-[57px] xxs:max-w-[226px] md:max-w-[325px] lg:max-w-[346px] xl:max-w-[439px]">
+                            Transform your business
+                        </h1>
+                        <p class="xxs:text-[16px] lg:text-[18px] xxs:mb-[2rem] md:max-w-[425px] lg:max-w-[501px] xl:max-w-[448px]">
+                            WhatsApp Business helps you reach your customers globally to deliver compelling experiences at scale. Showcase your products and services, increase sales, and build relationships all with WhatsApp.
+                        </p>
+                        <!-- Button link -->
+                        <button class="flex items-center group">
+                            <span class="relative btn-link xxs:text-[16px] lg:text-[18px] group-hover:text-colorGreen">Learn more</span>
+                            <span>
+                                <svg class="h-[1rem] w-[1rem] mt-1 group-hover:fill-colorGreen">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- image -->
+                    <div class="flex justify-center items-center">
+                        <img src="./img/catalog.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section transform ends here -->
+
+
+
+        <!-- footer -->
+        <footer id="footer" class="bg-colorBlack text-colorWhite">
+            <div>
+                <!-- button sm screen -->
+                <div class="xxs:h-[8rem] xxs:mx-[3rem] sm:mx-[5rem] xxs:flex xxs:justify-center xxs:items-center md:hidden">
+                    <!-- Button -->
+                    <button class="xxs:flex-1 relative btn group rounded-full xxs:px-[2rem] xxs:py-[1rem] md:py-[1rem] bg-colorGreen xxs:w-[130px] md:w-[200px] text-colorBlack flex justify-center items-center xxs:text-[14px] sm:text-[18px] lg:text-[20px]">
+                        <span class="relative z-10 group-hover:text-colorBlack xxs:text-[20px]">Download</span>
+                        <span class="relative ml-2 z-10 group-hover:text-colorBlack xxs:text-[20px]">&darr;</span>
+                    </button>
+                </div>
+
+                <!-- horizontal line -->
+                <hr class="border-t-1 border-slate-300 mx-0 my-4 md:hidden">
+
+                <!-- Socials for sm screen -->
+                <div class="flex justify-around items-center px-2rem sm:mx-[5rem] md:hidden">
+                    <svg class="h-[3rem] w-[3rem] fill-white">
+                        <use xlink:href="img/sprite.svg#icon-twitter-with-circle"></use>
+                    </svg>
+
+                    <svg class="h-[3rem] w-[3rem] fill-white">
+                        <use xlink:href="img/sprite.svg#icon-youtube-with-circle"></use>
+                    </svg>
+
+                    <svg class="h-[3rem] w-[3rem] fill-white">
+                        <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+                    </svg>
+
+                    <svg class="h-[3rem] w-[3rem] fill-white">
+                        <use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use>
+                    </svg>
+                </div>
+
+                <!-- horizontal line -->
+                <hr class="border-t-1 border-slate-300 mx-0 my-4 md:hidden">
+
+                <!-- white logo sm and md screen -->
+                <div class="mx-4 sm:mx-[2rem] md:pt-[3rem] lg:py-[5rem]">
+                    <!-- white logo sm and md screen -->
+                    <img src="./img/logo-white.png" alt="" class="xxs:w-[126px] pb-4 md:pb-[2rem] lg:hidden">
+
+                    <!-- footer links -->
+                    <div class="grid xxs:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+                        <!-- lg screen -->
+                        <div class="xxs:hidden lg:block">
+                            <div>
+                                <img src="./img/logo-white.png" alt="" class="lg:w-[170px] pb-[7rem] lg:pr-[1rem]">
+                            </div>
+
+                            <!-- Button -->
+                            <button class="relative btn group rounded-full px-[2rem] py-[1rem] bg-colorGreen lg:w-[170px] text-colorBlack flex justify-center items-center sm:text-[18px] lg:text-[20px]">
+                                <span class="relative z-10 group-hover:text-colorBlack xxs:text-[20px]">Download</span>
+                                <span class="relative ml-2 z-10 group-hover:text-colorBlack xxs:text-[20px]">&darr;</span>
+                            </button>
+                        </div>
+
+                        <div class="mb-[2rem]">
+                            <p class="text-[12px] lg:text-[14px] md:pb-[1rem] lg:pb-[2rem]">What we do</p>
+                            <ul>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Features</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Blog</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Security</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">For Business</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-[2rem]">
+                            <p class="text-[12px] md:pb-[1rem] lg:text-[14px] lg:pb-[2rem]">Who we are</p>
+                            <ul>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">About Us</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Careers</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Brand Center</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Privacy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-[1rem]">
+                            <p class="text-[12px] md:pb-[1rem] lg:text-[14px] lg:pb-[2rem]">Use WhatsApp</p>
+                            <ul>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Android</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">iPhones</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Mac/PC</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">WhatsApp Web</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-[1rem]">
+                            <p class="text-[12px] md:pb-[1rem] lg:text-[14px] lg:pb-[2rem]">Need Help?</p>
+                            <ul>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Contact Us</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Help Center</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[24px] hover:underline">Download</a></li>
+                                <li class="lg:pb-[.5rem]"><a href="#" class="text-[16px] md:text-[18px] lg:text-[22px] hover:underline">Security Advisories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- md:screen only -->
+                    <div class="xxs:hidden md:flex md:justify-between md:items-center md:py-[3rem] lg:hidden">
+                        <!-- Button -->
+                        <button class="relative btn group rounded-full xxs:px-[2rem] xxs:py-[1rem] bg-colorGreen md:w-[200px] text-colorBlack flex justify-center items-center sm:text-[18px] lg:text-[20px]">
+                            <span class="relative z-10 group-hover:text-colorBlack xxs:text-[20px]">Download</span>
+                            <span class="relative ml-2 z-10 group-hover:text-colorBlack xxs:text-[20px]">&darr;</span>
+                        </button>
+
+
+                        <!-- socials md: screen -->
+                        <div class="md:flex">
+                            <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                                <use xlink:href="img/sprite.svg#icon-twitter-with-circle"></use>
+                            </svg>
+        
+                            <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                                <use xlink:href="img/sprite.svg#icon-youtube-with-circle"></use>
+                            </svg>
+        
+                            <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                                <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+                            </svg>
+        
+                            <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                                <use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- horizontal line -->
+                <hr class="border-t-1 border-slate-300 mx-0 my-4">
+
+                <!-- socials and copyright for lg: screen -->
+                <div class="mx-[2rem] xxs:hidden lg:flex lg:justify-between lg:pt-8 xl:px-[6rem]">
+                    <div>
+                        <p class="text-[12px]">2024 &copy;</p>
+                        <p class="text-[12px]">WhatsApp LLC</p>
+                    </div>
+                    <div>
+                        <p class="text-[12px]">Terms & Privacy</p>
+                        <p class="text-[12px]">Policy</p>
+                        <p class="text-[12px]">Sitemap</p>
+                    </div>
+                    <div class="lg:flex">
+                        <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                            <use xlink:href="img/sprite.svg#icon-twitter-with-circle"></use>
+                        </svg>
+    
+                        <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                            <use xlink:href="img/sprite.svg#icon-youtube-with-circle"></use>
+                        </svg>
+    
+                        <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                            <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+                        </svg>
+    
+                        <svg class="h-[3rem] w-[3rem] fill-white mr-4">
+                            <use xlink:href="img/sprite.svg#icon-facebook-with-circle"></use>
+                        </svg>
+                    </div>
+                    <div>
+                        <button class="xxs:flex-1 rounded-full xxs:px-[2rem] xxs:py-[.5rem] bg-colorBlack border border-colorWhite xxs:w-[200px] text-colorWhite flex justify-between items-center xxs:text-[14px]">
+                            <span class="xxs:text-[20px]">English</span>
+                            <span class="xxs:text-[20px]">&darr;</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- socials and copyright for lg: screen ends here -->
+
+                <div class="pb-[2rem] mx-4 flex items-center justify-between sm:mx-[2rem] md:flex md:justify-between md:py-[3rem]">
+                    <!-- hidden md screen -->
+                    <div class="md:hidden">
+                        <p class="text-[10px]">Sitemap</p>
+                        <p class="text-[10px]">Terms & Privacy</p>
+                        <p class="text-[10px]">Policy</p>
+                        <p class="text-[10px]">2024 &copy;</p>
+                        <p class="text-[10px]">WhatsApp</p>
+                        <p class="text-[10px]">LLC</p>
+                    </div>
+
+                    <!-- show at md screen -->
+                    <div class="md:flex md:justify-between md:items-center">
+                        <div class="xxs:hidden md:flex lg:hidden">
+                            <p class="text-[12px]">2024 &copy; WhatsApp LLC</p>
+                        </div>
+                        <div class="xxs:hidden md:flex lg:hidden">
+                            <p class="text-[12px]">Terms & Privacy Policy Sitemap</p>
+                        </div>
+                        <div class="xxs:hidden md:flex lg:hidden">
+                            <button class="xxs:flex-1 rounded-full xxs:px-[2rem] xxs:py-[.5rem] bg-colorBlack border border-colorWhite xxs:w-[200px] text-colorWhite flex justify-between items-center xxs:text-[14px]">
+                                <span class="xxs:text-[20px]">English</span>
+                                <span class="xxs:text-[20px]">&darr;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- show at md screen ends here -->
+
+
+                    <!-- hidden md screen -->
+                    <div class="md:hidden">
+                        <!-- Button -->
+                        <button class="xxs:flex-1 rounded-full xxs:px-[2rem] xxs:py-[.5rem] bg-colorBlack border border-colorWhite xxs:w-[200px] text-colorWhite flex justify-between items-center xxs:text-[14px]">
+                            <span class="xxs:text-[20px]">English</span>
+                            <span class="xxs:text-[20px]">&darr;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+
+
+    </main>
+
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+
